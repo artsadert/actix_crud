@@ -4,7 +4,7 @@ use actix_cors::Cors;
 use actix_web::{HttpServer, http::header, App, middleware::Logger};
 use dotenv::dotenv;
 use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
-
+//main state - AppState
 use routes::{health_route::health_checker_handler, config::config};
 struct AppState{
     db: Pool<Postgres>
