@@ -9,7 +9,7 @@ use routes::{health_route::health_checker_handler, config::config};
 struct AppState{
     db: Pool<Postgres>
 }
-//main appliation
+//main appliation!
 #[actix_web::main]
 async fn main() -> std::io::Result<()>{
     if std::env::var_os("RUST_LOG").is_none(){
